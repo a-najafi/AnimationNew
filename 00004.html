@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,7 +69,7 @@
       window.addEventListener('resize', onWindowResize, false);
 
       var loader = new THREE.JDLoader();
-      loader.load("model/00004.jd",
+      loader.load("model/00004.JD",
       function (data)
       {
 
@@ -83,17 +83,17 @@
       materials = data.materials;
       if(materials[0])
       {
-        materials[0].color.setHex(0x6B6B6B);
+          //materials[0].color.setHex(0x000000 );
         //materials[0].emissive = new THREE.Color(.5,.5,.5);
       }
        if(materials[1])
        {
-       materials[1].color.setHex( 0xffffff );        
+           materials[1].color.setHex(0x6B6B6B );        
        //materials[1].emissive = new THREE.Color(1,1,1);
        }
        if(materials[2])
       { 
-      materials[2].color.setHex( 0x000000  );
+           //materials[2].color.setHex( 0x000000);
      // materials[2].emissive = new THREE.Color(1,1,1);
       }
       
